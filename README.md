@@ -63,7 +63,7 @@ $ git clone https://github.com/developer-onizuka/MachineLearningOnAWS
 ```
 
 # 6. MongoDB and Spark
-> https://github.com/developer-oninzuka/mongo-Spark
+> https://github.com/developer-onizuka/mongo-Spark
 
 # 7. Container with GPU
 > https://github.com/developer-onizuka/nvidia-docker_VirtualMachine
