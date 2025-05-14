@@ -1,8 +1,10 @@
 # Why container?
-https://youtu.be/dMIDnfYhoaM
-
 - コンテナは、開発環境・テスト環境・本番環境の間でソフトウェアの実行環境を統一できる。機械学習モデルの動作に影響を与えるライブラリのバージョン違いなどの問題を防ぐために、同じ環境を保証できるのは大きなメリットとなる。<br>
 - 生成AIのワークロードには、多くのライブラリや依存関係が含まれる。コンテナを使うことで、それらを一つの環境にまとめて管理できるため、環境構築の手間を減らし、移植性を高めることができる。<br>
+
+# 0. Demo
+> https://youtu.be/dMIDnfYhoaM
+
 
 # 1. Install Docker
 > https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/
