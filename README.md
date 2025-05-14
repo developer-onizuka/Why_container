@@ -6,13 +6,13 @@
 # 2. Hello World
 ```
 $ docker images
-$ docker pull ubuntu
-$ docker run -it --rm --name=ubuntu ubuntu echo "Hello world from Ubuntu"
+$ docker pull ubuntu:latest
+$ docker run -it --rm --name=ubuntu ubuntu:latest echo "Hello world from Ubuntu"
 ```
 
 # 3. Log into Ubuntu Container
 ```
-$ docker run -it --rm --name=ubuntu ubuntu
+$ docker run -it --rm --name=ubuntu ubuntu:latest
 root@88c964b8a535:/# hostname
 88c964b8a535
 root@88c964b8a535:/# hostname -i
@@ -40,7 +40,7 @@ root@88c964b8a535:/# cat /home/ubuntu/test.txt
 Hello world
 ```
 ```
-$ docker run -it --rm --name=ubuntu ubuntu
+$ docker run -it --rm --name=ubuntu ubuntu:latest
 root@c2ec4adc562f:/# cat /home/ubuntu/test.txt
 cat: /home/ubuntu/test.txt: No such file or directory
 ```
@@ -48,7 +48,7 @@ cat: /home/ubuntu/test.txt: No such file or directory
 # 5. Pull the Jupyter Notebook environment
 > https://hub.docker.com/u/jupyter
 ```
-$ docker pull jupyter/tensorflow-notebook
+$ docker pull jupyter/tensorflow-notebook:latest
 $ docker images
 REPOSITORY                    TAG       IMAGE ID       CREATED         SIZE
 ubuntu                        latest    6015f66923d7   2 weeks ago     117MB
@@ -69,7 +69,7 @@ $ git clone https://github.com/developer-onizuka/MachineLearningOnAWS
 
 # 8. Clean up
 ```
-$ docker rmi jupyter/tensorflow-notebook
+$ docker rmi jupyter/tensorflow-notebook:latest
 Untagged: jupyter/tensorflow-notebook:latest
 Deleted: sha256:173f124f638efe870bb2b535e01a76a80a95217e66ed00751058c51c09d6d85d
 ```
