@@ -2,13 +2,10 @@
 - コンテナは、開発環境・テスト環境・本番環境の間でソフトウェアの実行環境を統一できます。機械学習モデルの動作に影響を与えるライブラリのバージョン違いなどの問題を防ぐために、同じ環境を保証できるのは大きなメリットです。<br>
 - 生成AIのワークロードには、多くのライブラリや依存関係が含まれます。コンテナを使うことで、それらを一つの環境にまとめて管理できるため、環境構築の手間を減らし、移植性を高めることができます。<br>
 
-# 0. ゴール
+# 1. ゴール
 - コンテナ環境の構築 (2章、3章)
-- コンテナ経由でJupyter Notebookを起動し、Hugging Faceからダウンロードしたモデルを用い、何らかの推論とファインチューニングを実行する例。(4章、5章)<br>
+- コンテナ経由でJupyter Notebookを起動し、Hugging Faceからダウンロードしたモデルを用い、何らかの推論とファインチューニングを実行 (4章、5章)<br>
 - コンテナを使って具体的にできることの事例　(6章)
-
-# 1. Demo
-> https://youtu.be/dMIDnfYhoaM
 
 # 2. Install Docker
 > https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/
@@ -71,6 +68,10 @@ $ docker run -it --rm -p 8888:8888 --name jupyter-notebook jupyter/tensorflow-no
 ```
 $ git clone https://github.com/developer-onizuka/MachineLearningOnAWS
 ```
+
+このあと、任意のブラウザで所望のURLにアクセスすることで、Jupyter Notebookを操作できます。詳細は以下のビデオを視聴ください。<br>
+> https://youtu.be/dMIDnfYhoaM
+
 
 # 5. Clean up
 ```
