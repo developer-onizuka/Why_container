@@ -5,7 +5,7 @@
 # 1. ゴール
 - コンテナ環境の構築 (2章、3章)
 - コンテナ経由でJupyter Notebookを起動し、Hugging Faceからダウンロードしたモデルを用い、何らかの推論とファインチューニングを実行 (4章、5章)<br>
-- コンテナを使って具体的にできることの事例　(6章)
+- コンテナを使って具体的にできることの事例 (6章)
 
 # 2. Install Docker
 > https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/
@@ -80,7 +80,7 @@ Untagged: jupyter/tensorflow-notebook:latest
 Deleted: sha256:173f124f638efe870bb2b535e01a76a80a95217e66ed00751058c51c09d6d85d
 ```
 
-# 6. 具体事例
+# 6. 具体的な事例
 # 6-1. MongoDB and Spark　難易度★★
 MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレポートを生成する例です。
 特に コンテナ技術 を活用し、データの抽出・変換・ロード（ETL）を実施しながら分析を進めていくものです。<br>
