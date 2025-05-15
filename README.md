@@ -3,24 +3,25 @@
 - 生成AIのワークロードには、多くのライブラリや依存関係が含まれます。コンテナを使うことで、それらを一つの環境にまとめて管理できるため、環境構築の手間を減らし、移植性を高めることができます。<br>
 
 # ゴール
-- コンテナ経由でJupyter Notebookを起動し、Hugging Faceからダウンロードしたモデルを用い、何らかの推論とファインチューニングを実行する例になります。(1章〜6章)<br>
-- コンテナを使って具体的にできることの事例　(7章)
+- コンテナ環境の構築 (2章、3章)
+- コンテナ経由でJupyter Notebookを起動し、Hugging Faceからダウンロードしたモデルを用い、何らかの推論とファインチューニングを実行する例。(4章、5章)<br>
+- コンテナを使って具体的にできることの事例　(6章)
 
-# 0. Demo
+# 1. Demo
 > https://youtu.be/dMIDnfYhoaM
 
-
-# 1. Install Docker
+# 2. Install Docker
 > https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/
 
-# 2. Hello World
+# 3. Ubuntuをコンテナ上で起動する
+# 3-1. Hello world
 ```
 $ docker images
 $ docker pull ubuntu:latest
 $ docker run -it --rm --name=ubuntu ubuntu:latest echo "Hello world from Ubuntu"
 ```
 
-# 3. Log into Ubuntu Container
+# 3-2. Log into Ubuntu Container
 ```
 $ docker run -it --rm --name=ubuntu ubuntu:latest
 root@88c964b8a535:/# hostname
@@ -43,7 +44,7 @@ UBUNTU_CODENAME=noble
 LOGO=ubuntu-logo
 ```
 
-# 4. Ephemeral environment
+# 3-3. Ephemeral environment
 ```
 root@88c964b8a535:/# echo "Hello world" > /home/ubuntu/test.txt
 root@88c964b8a535:/# cat /home/ubuntu/test.txt 
@@ -55,7 +56,7 @@ root@c2ec4adc562f:/# cat /home/ubuntu/test.txt
 cat: /home/ubuntu/test.txt: No such file or directory
 ```
 
-# 5. Pull the Jupyter Notebook environment
+# 4. Pull the Jupyter Notebook environment
 > https://hub.docker.com/u/jupyter
 ```
 $ docker pull jupyter/tensorflow-notebook:latest
@@ -71,28 +72,28 @@ $ docker run -it --rm -p 8888:8888 --name jupyter-notebook jupyter/tensorflow-no
 $ git clone https://github.com/developer-onizuka/MachineLearningOnAWS
 ```
 
-# 6. Clean up
+# 5. Clean up
 ```
 $ docker rmi jupyter/tensorflow-notebook:latest
 Untagged: jupyter/tensorflow-notebook:latest
 Deleted: sha256:173f124f638efe870bb2b535e01a76a80a95217e66ed00751058c51c09d6d85d
 ```
 
-# 7. 具体事例
-# 7-1. MongoDB and Spark
+# 6. 具体事例
+# 6-1. MongoDB and Spark
 MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレポートを生成する例です。
 特に コンテナ技術 を活用し、データの抽出・変換・ロード（ETL）を実施しながら分析を進めていくものです。<br>
 ただし、Kubernetesを使っていないので、MongoDBとApache Sparkの接続はIPアドレスを直接指定する雑な作りになっています。<br>
 
 > https://github.com/developer-onizuka/mongo-Spark
 
-# 7-2. Container with GPU
+# 6-2. Container with GPU
 GPU 対応の Docker コンテナ環境構築（NVIDIA + CUDA + Dlib）を作る例です。
 仮想マシン上に GPU を活用した Docker コンテナ環境を構築し、CUDA や Dlib を利用可能な環境を整えるものです。<br>
 
 > https://github.com/developer-onizuka/nvidia-docker_VirtualMachine
 
-# 7-3. MongoDB ReplicaSet
+# 6-3. MongoDB ReplicaSet
 MongoDB ReplicaSet を Kubernetesで構築する例です。
 MongoDB のレプリカセットを **Kubernetes クラスター + Istio** を活用して構築し、負荷分散とフェイルオーバーに対応したスケーラブルなデータベース環境を確立したものです。<br>
 
