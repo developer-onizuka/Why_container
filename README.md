@@ -68,9 +68,16 @@ $ git clone https://github.com/developer-onizuka/MachineLearningOnAWS
 ```
 
 # 6. MongoDB and Spark
+MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレポートを生成することが目的です。
+特に コンテナ技術 を活用し、データの抽出・変換・ロード（ETL）を実施しながら分析を進めていくものです。<br>
+ただし、Kubernetesを使っていないので、MongoDBとApache Sparkの接続はIPアドレスを直接指定する雑な作りになっています。<br>
+
 > https://github.com/developer-onizuka/mongo-Spark
 
 # 7. Container with GPU
+GPU 対応の Docker コンテナ環境構築（NVIDIA + CUDA + Dlib）を作ります。
+仮想マシン上に GPU を活用した Docker コンテナ環境を構築し、CUDA や Dlib を利用可能な環境を整えるものです。<br>
+
 > https://github.com/developer-onizuka/nvidia-docker_VirtualMachine
 
 # 8. Clean up
