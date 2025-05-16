@@ -92,7 +92,7 @@ MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレ�
 GPU 対応の Docker コンテナ環境構築（OpenCV + CUDA）を作る例です。
 仮想マシン上に GPU を活用した Docker コンテナ環境を構築し、OpenCV や CUDA を使い、Webカメラを通じて顔を検知するアプリを作るものです。<br>
 
-<img src="https://github.com/developer-onizuka/nvidia-docker_VirtualMachine/blob/main/Screenshot%20from%202021-08-22%2017-43-26.png" width="480"><br>
+<img src="https://github.com/developer-onizuka/nvidia-docker_VirtualMachine/blob/main/Screenshot%20from%202021-08-22%2017-43-26.png" width="640"><br>
 
 > https://github.com/developer-onizuka/nvidia-docker_VirtualMachine
 
