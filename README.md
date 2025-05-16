@@ -89,8 +89,8 @@ MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレ�
 > https://github.com/developer-onizuka/mongo-Spark
 
 # 6-2. Container with GPU　難易度★★★
-GPU 対応の Docker コンテナ環境構築（NVIDIA + CUDA + Dlib）を作る例です。
-仮想マシン上に GPU を活用した Docker コンテナ環境を構築し、CUDA や Dlib を利用可能な環境を整えるものです。<br>
+GPU 対応の Docker コンテナ環境構築（OpenCV + CUDA）を作る例です。
+仮想マシン上に GPU を活用した Docker コンテナ環境を構築し、OpenCV や CUDA を使い、Webカメラを通じて顔を検知するアプリを作るものです。<br>
 
 > https://github.com/developer-onizuka/nvidia-docker_VirtualMachine
 
