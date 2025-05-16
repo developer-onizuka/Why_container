@@ -84,7 +84,7 @@ Deleted: sha256:173f124f638efe870bb2b535e01a76a80a95217e66ed00751058c51c09d6d85d
 # 6-1. MongoDB and Spark　難易度★★
 MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレポートを生成する例です。
 特に コンテナ技術 を活用し、データの抽出・変換・ロード（ETL）を実施しながら分析を進めていくものです。<br>
-ただし、Kubernetesを使っていないので、MongoDBとApache Sparkの接続はIPアドレスを直接指定する雑な作りになっています。<br>
+ただし、Kubernetesを使っていないので、MongoDBとApache Sparkの接続はIPアドレスを直接指定する雑な作りになっています。
 
 <img src="https://miro.medium.com/v2/resize:fit:2400/format:webp/1*_Km_1ZcQmlsdYEJv010sGA.png"><br>
 
