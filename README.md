@@ -86,8 +86,7 @@ MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレ�
 特に コンテナ技術 を活用し、データの抽出・変換・ロード（ETL）を実施しながら分析を進めていくものです。<br>
 ただし、Kubernetesを使っていないので、MongoDBとApache Sparkの接続はIPアドレスを直接指定する雑な作りになっています。<br>
 
-<img src="https://miro.medium.com/v2/resize:fit:2400/format:webp/1*_Km_1ZcQmlsdYEJv010sGA.png" width="640"><br>
-
+<img src="https://miro.medium.com/v2/resize:fit:2400/format:webp/1*_Km_1ZcQmlsdYEJv010sGA.png"><br>
 
 > https://github.com/developer-onizuka/mongo-Spark
 
