@@ -85,23 +85,21 @@ Deleted: sha256:173f124f638efe870bb2b535e01a76a80a95217e66ed00751058c51c09d6d85d
 MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレポートを生成する例です。
 特に コンテナ技術 を活用し、データの抽出・変換・ロード（ETL）を実施しながら分析を進めていくものです。<br>
 ただし、Kubernetesを使っていないので、MongoDBとApache Sparkの接続はIPアドレスを直接指定する雑な作りになっています。
-
-<img src="https://miro.medium.com/v2/resize:fit:2400/format:webp/1*_Km_1ZcQmlsdYEJv010sGA.png"><br>
-
 > https://github.com/developer-onizuka/mongo-Spark
+<img src="https://miro.medium.com/v2/resize:fit:2400/format:webp/1*_Km_1ZcQmlsdYEJv010sGA.png"><br>
 
 # 6-2. Container with GPU　難易度★★★
 GPU 対応の Docker コンテナ環境構築（OpenCV + CUDA）を作る例です。
 仮想マシン上に GPU を活用した Docker コンテナ環境を構築し、OpenCV や CUDA を使い、Webカメラを通じて顔を検知するアプリを作るものです。<br>
+> https://github.com/developer-onizuka/nvidia-docker_VirtualMachine
 
 <img src="https://github.com/developer-onizuka/nvidia-docker_VirtualMachine/blob/main/Screenshot%20from%202021-08-22%2017-43-26.png" width="640">
 
-> https://github.com/developer-onizuka/nvidia-docker_VirtualMachine
 
 # 6-3. MongoDB ReplicaSet　難易度★★★★★
 MongoDB ReplicaSet を Kubernetesで構築する例です。ReplicaSetとは、冗長性と高可用性を提供する相互接続されたMongoDBインスタンスのグループです。
 MongoDB のReplicaSetを **Kubernetes クラスター + Istio** を活用して構築し、負荷分散とフェイルオーバーに対応したスケーラブルなデータベース環境を確立するものです。<br>
+> https://github.com/developer-onizuka/mongoDB_replicaSet
 
 ![mongoDB-replicaSet2.png](https://github.com/developer-onizuka/mongoDB_replicaSet/blob/main/mongoDB-replicaSet2.png)<br>
 
-> https://github.com/developer-onizuka/mongoDB_replicaSet
