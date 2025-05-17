@@ -81,6 +81,13 @@ Deleted: sha256:173f124f638efe870bb2b535e01a76a80a95217e66ed00751058c51c09d6d85d
 ```
 
 # 6. 具体的な事例
+# 6-1. PySpark 難易度★
+このコードは、PySpark を使用して CSV ファイルからデータを読み込み、DataFrame の処理を行う Jupyter Notebook について学ぶものです。
+> https://github.com/developer-onizuka/pandas
+> 
+<img src="https://dlcdn.apache.org/spark/docs/3.1.1/api/python/_images/pyspark-components.png"><br>
+
+
 # 6-1. MongoDB and Spark　難易度★★
 MongoDB と Apache Spark を組み合わせてデータ処理を行い、BIレポートを生成する例です。
 特に コンテナ技術 を活用し、データの抽出・変換・ロード（ETL）を実施しながら分析を進めていくものです。<br>
