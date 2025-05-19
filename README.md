@@ -82,7 +82,7 @@ Deleted: sha256:173f124f638efe870bb2b535e01a76a80a95217e66ed00751058c51c09d6d85d
 
 # 6. 具体的な事例
 # 6-1. PySpark 難易度★
-このコードは、PySpark を使用して CSV ファイルからデータを読み込み、DataFrame の処理を行うものです。
+PySpark を使用して CSV ファイルからデータを読み込み、DataFrame の処理を行うものです。データエンジニアリングにおける基本的な処理の一つです。
 > https://github.com/developer-onizuka/pandas
 > 
 <img src="https://dlcdn.apache.org/spark/docs/3.1.1/api/python/_images/pyspark-components.png" width="640"><br>
